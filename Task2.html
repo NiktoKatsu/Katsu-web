@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <hi>Enter your name</hi>
+    <input id="userInput"> <br> <br>
+    <button onclick="myFunction()" >  Submit  </button>
+    <h1 id="message">    </h1>
+    <style>
+        body{background-color: rgba(82, 86, 150, 0.477); text-align: center; color:rgb(255, 255, 255)}
+            
+    </style>
+
+    <script>
+        function myFunction(){
+             let userInput = document.querySelector("#userInput")
+             let message = document.querySelector("#message")
+
+             message.innerHTML = "Welcome " + userInput.value +", nice to meet you!"; 
+        }
+
+    </script>
+</body>
+</html>
